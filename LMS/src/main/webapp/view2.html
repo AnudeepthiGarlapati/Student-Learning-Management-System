@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Design Essentials</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: #f0f0f0;
+        }
+
+        .navbar {
+            background: #e53935;
+            background: -webkit-linear-gradient(to right, #e35d5b, #e53935);
+            background: linear-gradient(to right, #e35d5b, #e53935);
+        }
+
+        .navbar .navbar-brand {
+            color: white;
+        }
+
+        .navbar .nav-link {
+            color: white;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .course-title {
+            font-size: 24px;
+            color: #e53935;
+        }
+
+        .course-description {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" width="50" height="50">
+            Student LMS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="sample.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="courses.jsp">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="enrollment.jsp">Enrollment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.jsp">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.jsp">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.jsp">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Web Design Essentials</h1>
+
+        <h2 class="course-title" id="courseTitle">What Are Web Design Essentials?</h2>
+        <p class="course-description" id="courseDescription">Web Design Essentials encompass the fundamental principles and practices for creating visually appealing and user-friendly websites. Key topics include:</p>
+        <ul class="course-description">
+            <li>Design Principles</li>
+            <li>Typography</li>
+            <li>Color Theory</li>
+            <li>Layout and Composition</li>
+            <li>Responsive Design</li>
+            <li>Usability and User Experience</li>
+        </ul>
+
+        <!-- Link to go back to the course listing (you can replace this with your actual back link) -->
+        <a class="back-link" href="courses.jsp">Back to Courses</a>
+    </div>
+
+    <script>
+        // JavaScript to populate course details
+        window.addEventListener("DOMContentLoaded", function () {
+            // Simulated course data (you can replace this with real data)
+            var courseData = {
+                title: "Web Design Essentials",
+                description: "Web Design Essentials encompass the fundamental principles and practices for creating visually appealing and user-friendly websites. This course covers design principles, typography, color theory, layout, and more."
+            };
+
+            // Set course details
+            document.getElementById("courseTitle").textContent = courseData.title;
+            document.getElementById("courseDescription").textContent = courseData.description;
+        });
+    </script>
+</body>
+
+</html>
