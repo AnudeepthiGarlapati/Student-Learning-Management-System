@@ -10,7 +10,6 @@
 - [System Requirements](#system-requirements)
 - [Technologies Used](#technologies-used)
 - [Usage](#usage)
-- [License](#license)
 
 ## Project Overview
 
